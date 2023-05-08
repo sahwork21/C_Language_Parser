@@ -1,0 +1,33 @@
+# This test is the first attempt to assign to a sequence element.
+
+# Make a sequence with 5 elements.
+list = [ 0, 0, 0, 0, 0 ];
+
+# Change each of the lements.
+
+# Just a constant as the index.
+list[ 0 ] = 5;
+
+# An expression as the index.
+list[ 2 - 1 ] = 10;
+
+# A variable as the index.
+x = 2;
+list[ x ] = 15;
+
+# An expression containing a variable as the index.
+list[ 1 + x ] = 20;
+
+# Another sequence element used as part of the index.
+list[ list[ 0 ] - 1 ] = 25;
+
+# Print out all the values.
+i = 0;
+while ( i < len list ) {
+  # Print out element i of the sequence.
+  print list[ i ];
+
+  # Print a newline, then move on to the next item
+  print "\n";
+  i = i + 1;
+}

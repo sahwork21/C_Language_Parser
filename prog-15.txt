@@ -1,0 +1,47 @@
+# Compute prime numbers
+
+# Number of values to check for prime-ness
+LIMIT = 1000;
+
+# List of primes found so far.
+plist = [];
+
+val = 2;
+while ( val < ( LIMIT + 1 ) ) {
+  # Number is prime until we find a factor.
+  isPrime = 1;
+
+  # look for a factor among the primes we've found
+  idx = 0;
+  while ( isPrime &&
+          ( idx < len plist ) &&
+	  # This says plist[ idx ] * plist[ idx ] <= val
+	  # For boolean values, 1 - b means ! b
+	  # without the usual precedence, we need a lot of extra parens.
+	  ( 1 - ( val < ( ( plist[ idx ] ) * ( plist[ idx ] ) ) ) ) ) {
+    
+    # does val divide evenly by this prime?
+    if ( ( val / ( plist[ idx ] ) * ( plist[ idx ] ) ) == val )
+      isPrime = 0;
+
+    idx = idx + 1;
+  }
+
+  # If we didn't find a factor, add this value to the prime list.
+  if ( isPrime )
+    push plist, val;
+
+  # Move on to the next value
+  val = val + 1;
+}
+
+# Print out all the primes from our list.
+i = 0;
+while ( i < len plist ) {
+  # print the prime on a line by itself
+  print plist[ i ];
+  print "\n";
+
+  # Move to the next element of plist.
+  i = i + 1;
+}

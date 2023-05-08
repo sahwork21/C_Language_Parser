@@ -1,0 +1,5 @@
+# This test is the first use of a sequence (an empty one) and a len
+# expression.
+
+# Make an empty sequence and print its length.
+print len [];

@@ -1,0 +1,19 @@
+# This test checks for type mismatch in pushing a value onto a sequence.
+
+# Make some values.
+a = [ 1, 2, 3 ];
+b = 2;
+c = [ 10, 20, 30 ];
+
+# valid push.
+push a, b;
+
+# Print out a message.
+print "successful push a, b\n";
+
+# invalid push.
+push a, c;
+
+# This message shouldn't get printed.
+# We should exit before we get to this line.
+print "successful push a, c\n";

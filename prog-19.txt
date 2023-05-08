@@ -1,0 +1,30 @@
+# This test checks for type mismatch in the len expression.
+
+# Make some values.
+a = [ 1, 2, 3 ];
+push a, 4;
+push a, 5;
+b = "example";
+c = a;
+d = 7;
+
+# Length of a sequence.
+print len a;
+print "\n";
+
+# Length of a sequence.
+print len b;
+print "\n";
+
+# Length of a sequence.
+print len c;
+print "\n";
+
+# Length of an integer (shouldn't work)
+print len d;
+print "\n";
+
+
+# This message shouldn't get printed.
+# We should exit before we get to this line.
+print "This shouldn't print.\n";

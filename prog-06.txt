@@ -1,0 +1,26 @@
+# This test is the first attempt to use the sequence index operator to
+# get the value of a sequence element.
+
+# make a sequence containing prime numbers.
+list = [];
+
+push list, 2;
+push list, 3;
+push list, 5;
+push list, 7;
+push list, 11;
+push list, 13;
+push list, 17;
+
+# Print selected elements of this sequence.
+print list[ 0 ];
+print "\n";
+
+print list[ 2 ];
+print "\n";
+
+print list[ 4 ];
+print "\n";
+
+print list[ 6 ];
+print "\n";

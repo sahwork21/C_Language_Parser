@@ -1,0 +1,40 @@
+# Extra credit test for int * sequence
+
+# Make a sequence of zeros.
+a = [ 0 ];
+b = 10 * a;
+
+i = 0;
+while ( i < 10 ) {
+  b[ i ] = i + 1;
+  i = i + 1;
+}
+
+i = 0;
+while ( i < len b ) {
+  if ( 0 < i )  # Fencepost
+    print " ";
+  print b[ i ];
+  i = i + 1;
+}
+print "\n";
+
+# this should also work with strings.
+
+str = "abc" * 20;
+
+print str;
+print "\n";
+
+# We can apply a sequence multiply multiple times, on the left or right.
+
+seq = 3 * [ 1, 2 ] * 4;
+
+i = 0;
+while ( i < len seq ) {
+  if ( 0 < i )  # Fencepost
+    print " ";
+  print seq[ i ];
+  i = i + 1;
+}
+print "\n";

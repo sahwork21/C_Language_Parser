@@ -1,0 +1,14 @@
+# This test tries some operations on sequences that aren't stored in
+# variables.
+
+# Report the length of a literal string.
+print len "abc";
+print "\n";
+
+# Push a value onto a literal string (although, we can't do anything
+# with it afterward, we can still check for leaks.
+push [ 1, 2, 3 ], 4;
+
+# Get just one element of a literal array.
+print [ 0, 99, 100, 101, 199 ][ 2 ];
+print "\n";

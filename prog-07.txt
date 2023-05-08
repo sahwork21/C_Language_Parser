@@ -1,0 +1,13 @@
+# This test is the first attempt to make a sequence from integer
+# initialization values.
+
+# Make a sequence of multiples of 7.
+list = [ 0, 7, 14, 21, 28, 35, 42, 49 ];
+
+# Print it one value per line.
+i = 0;
+while ( i < len list ) {
+  print list[ i ];
+  print "\n";
+  i = i + 1;
+}

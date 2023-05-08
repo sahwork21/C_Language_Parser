@@ -1,0 +1,14 @@
+# This test is the first attempt to initialize a sequence with
+# non-trivial sub-expressions for the elements.
+
+# Make 10 different strigns.
+i = 0;
+while ( i < 10 ) {
+  # make a sequence of characters that depend on the value of i.
+  str = [ 'a' + i, 'b' + i, 'c' + i, 'd' + i, '\n' ];
+
+  # Print that sequence as a string.
+  print str;
+
+  i = i + 1;
+}

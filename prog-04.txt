@@ -1,0 +1,18 @@
+# This test is the first attempt to print a sequence (as a string),
+# and it requires resizing the array inside the sequence.  It also
+# uses literal characters, but those are alread provided with the
+# starter.
+
+# A sequence that we'll use like a string.
+str = [];
+
+# Push character code values onto the sequence.
+push str, 'H';
+push str, 'e';
+push str, 'l';
+push str, 'l';
+push str, 'o';
+push str, '\n';
+
+# Print the sequence as a string.
+print str;

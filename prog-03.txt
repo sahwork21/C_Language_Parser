@@ -1,0 +1,14 @@
+# This test is the first use of push and storing a sequence in a
+# variable.
+
+# Make an empty sequence.
+x = [];
+
+# Push some values onto the end.
+push x, 1;
+push x, 2;
+push x, 4;
+push x, 8;
+
+# Now, report the length.
+print len x;

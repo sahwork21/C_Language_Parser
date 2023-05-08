@@ -1,0 +1,4 @@
+Correct: sequence a is less than c.
+Correct: sequence a is less than d.
+Correct: sequence a is less than e.
+Correct: sequence a is less than f.

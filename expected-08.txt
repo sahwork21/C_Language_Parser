@@ -1,0 +1,10 @@
+abcd
+bcde
+cdef
+defg
+efgh
+fghi
+ghij
+hijk
+ijkl
+jklm

@@ -1,0 +1,10 @@
+# This test is the first attempt to use a literal string to create a
+# sequence.
+
+# A double-quoted string creates a new sequence.
+str = "Hello";
+nl = "\n";
+
+# Print these two strings.
+print str;
+print nl;

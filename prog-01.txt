@@ -1,0 +1,39 @@
+# This test uses features that are already there in the starter.  It
+# should work before you even andd anything.
+
+# Print out a number.
+print 1;
+
+# Ideally, we would print a newline here, but we need sequences
+# (strings) to do that.
+
+# Try out using a variable.
+x = 2;
+print x;
+	
+# Try printing inside an if statement.
+y = 5;
+if ( y == 5 )
+  print 3;
+
+# Try printing inside a while statement.
+z = 4;
+while ( z < 7 ) {
+  print z;
+  z = z + 1;
+}
+
+# Try some arithmetic operatiosn in an expression.
+print x * 3 + 1;
+print y * 2 - 2;
+print z / 2 * 3;
+
+# try logical opertors.
+if ( ( x == 2 ) && ( y == 0 ) )
+  # This won't print.
+  print 999;
+
+# but this will.
+if ( ( x == 7 ) || ( y == 5 ) )
+  # But this will
+  print 0;

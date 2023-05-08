@@ -1,0 +1,35 @@
+# This test tries comparing sequences for equality.
+
+a = [ 1, 2, 3 ];
+b = [ 1, 2, 3 ];
+c = [ 2, 2, 3 ];
+d = 1;
+
+if ( a == b ) {
+   print "test-1: sequences a and b should be equal.\n";
+}
+
+if ( a == c ) {
+   print "test-2: sequences a and c should not be equal.\n";
+}
+
+# Now, modify the b sequence by adding a value.
+push b, 4;
+
+if ( a == b ) {
+   print "test-3: sequences a and b should not be equal.\n";
+}
+
+# Now, modify the c sequence by changing a value.
+c[ 0 ] = 1;
+
+if ( a == c ) {
+   print "test-4: sequences a and c should be equal.\n";
+}
+
+# this will be false, but it shouldn't cause the program to termiante.
+if ( a == d ) {
+   print "test-5: sequence a and integer d should not be equal.\n";
+}
+
+print "Made it to the end.\n";

@@ -1,0 +1,17 @@
+# This test checks for type mismatch in accessing a sequence element.
+
+# Make some values.
+a = [ 1, 2, 3 ];
+b = 2;
+c = [ 10, 20, 30 ];
+
+# valid reference to an element.
+print c[ b ];
+print "\n";
+
+# invalid reference to an element
+print c[ a ];
+print "\n";
+
+# should fail before we get to here.
+print "This shouldn't get printed\n";

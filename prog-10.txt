@@ -1,0 +1,53 @@
+# This test shows that sequences have reference semantics.
+
+# Make a sequence with 5 elements.
+a = [ 1, 2, 3, 4, 5 ];
+
+# Make the b sequence refer to the same thing.
+b = a;
+
+# Print out the a sequence.
+i = 0;
+while ( i < len a ) {
+  # Print a space _between_ elements.
+  if ( 0 < i )
+    print " ";
+  
+  print a[ i ];
+
+  i = i + 1;
+}
+print "\n";
+
+# Change an element via the b reference.
+b[ 4 ] = 100;
+
+# Print out the sequence again.
+i = 0;
+while ( i < len a ) {
+  # Print a space _between_ elements.
+  if ( 0 < i )
+    print " ";
+  
+  print a[ i ];
+
+  i = i + 1;
+}
+print "\n";
+
+# Add an element via the a sequence.
+push a, 200;
+
+# Print out the sequence, via b this time.
+i = 0;
+while ( i < len b ) {
+  # Print a space _between_ elements.
+  if ( 0 < i )
+    print " ";
+  
+  print b[ i ];
+
+  i = i + 1;
+}
+print "\n";
+
